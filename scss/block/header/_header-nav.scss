@@ -1,4 +1,124 @@
 header {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+  background: #0d0c22;
+
+  .nav_top {
+    padding: 16px 0;
+
+    .nav_top-container {
+      .nav_top-p {
+        color: #fff;
+        text-align: center;
+        font-family: Helvetica Neue;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16.9px;
+
+        span {
+          color: #ea4c89;
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 16.9px;
+        }
+      }
+    }
+  }
+
+  .nav_links {
+    background-color: #fff;
+    padding: 25px 0;
+
+    .nav_links-contaienr {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        user-select: none;
+      }
+
+      .nav_links-list {
+        max-width: 519px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        // padding: 30px 16px;
+
+        .nav_links-item {
+          margin-left: 16px;
+
+          .nav_link-link {
+            color: #6e6d7a;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+          }
+        }
+      }
+
+      .links-form {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        .signIn {
+          a {
+            color: #6e6d7a;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            margin-left: 20px;
+          }
+        }
+
+        .nav_links_signUp {
+          width: 81px;
+          height: 40px;
+          border-radius: 8px;
+          background: #ea4c89;
+          border: none;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          margin-left: 20px;
+        }
+      }
+
+      .nav_links-burger {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 825px) {
+  header {
+    .nav_top {
+      .nav_top-container {
+        display: flex;
+        justify-content: space-between;
+        .nav_top-p {
+          user-select: none;
+        }
+      }
+    }
+
+    .nav_links {
+      .nav_links-contaienr {
+        .nav_links-list {
+          display: none;
+        }
+
+        .links-form {
+          display: none;
+        }
+
+        .nav_links-burger {
+            margin-left: auto;
+          display: block;
+        }
+      }
+    }
+  }
 }

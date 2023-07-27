@@ -1,4 +1,4 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"); /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -370,8 +370,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   position: relative;
+  background: #0D0C22;
 }
 
 .container {
@@ -386,8 +388,221 @@ body {
 header {
   width: 100%;
   height: auto;
+  background: #0d0c22;
+}
+header .nav_top {
+  padding: 16px 0;
+}
+header .nav_top .nav_top-container .nav_top-p {
+  color: #fff;
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.9px;
+}
+header .nav_top .nav_top-container .nav_top-p span {
+  color: #ea4c89;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16.9px;
+}
+header .nav_links {
+  background-color: #fff;
+  padding: 25px 0;
+}
+header .nav_links .nav_links-contaienr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .nav_links .nav_links-contaienr .logo {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+header .nav_links .nav_links-contaienr .nav_links-list {
+  max-width: 519px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .nav_links .nav_links-contaienr .nav_links-list .nav_links-item {
+  margin-left: 16px;
+}
+header .nav_links .nav_links-contaienr .nav_links-list .nav_links-item .nav_link-link {
+  color: #6e6d7a;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+header .nav_links .nav_links-contaienr .links-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+header .nav_links .nav_links-contaienr .links-form .signIn a {
+  color: #6e6d7a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-left: 20px;
+}
+header .nav_links .nav_links-contaienr .links-form .nav_links_signUp {
+  width: 81px;
+  height: 40px;
+  border-radius: 8px;
+  background: #ea4c89;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 20px;
+}
+header .nav_links .nav_links-contaienr .nav_links-burger {
+  display: none;
 }
 
+@media screen and (max-width: 825px) {
+  header .nav_top .nav_top-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .nav_top .nav_top-container .nav_top-p {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  header .nav_links .nav_links-contaienr .nav_links-list {
+    display: none;
+  }
+  header .nav_links .nav_links-contaienr .links-form {
+    display: none;
+  }
+  header .nav_links .nav_links-contaienr .nav_links-burger {
+    margin-left: auto;
+    display: block;
+  }
+}
+header .header_hero {
+  background-image: url(../../../media/img/header/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+header .header_hero .header_hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+header .header_hero .header_hero-container .hero_buttons {
+  padding-top: 50px;
+  margin-bottom: 46px;
+}
+header .header_hero .header_hero-container .hero_buttons button {
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 16px 22.063px 16px 20.328px;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+header .header_hero .header_hero-container .hero_buttons button:hover {
+  background-color: #fff;
+  color: #000000;
+}
+header .header_hero .header_hero-container .hader_hero-title {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+header .header_hero .header_hero-container .header_hero-description {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 41.46px;
+}
+header .header_hero .header_hero-container .header_hero-inp {
+  max-width: 600px;
+  width: 100%;
+  height: 58px;
+  border-radius: 50px;
+  background: #f3f3f4;
+  border: none;
+  margin-bottom: 46px;
+  padding: 0 25px;
+  outline: none;
+}
+header .header_hero .header_hero-container .header_hero-link {
+  margin-bottom: 84.1px;
+}
+header .header_hero .header_hero-container .header_hero-link a {
+  color: #fff;
+}
+header .header_hero .header_hero-container .header_hero-link button {
+  padding: 5px 15.156px 5px 16px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-left: 11px;
+  margin-bottom: 10px;
+}
+header .header_hero .Gmail {
+  color: white;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1180px) {
+  header {
+    height: auto;
+  }
+  header .hero_buttons {
+    text-align: center;
+  }
+  header .header_hero-link {
+    text-align: center;
+  }
+}
 main {
   width: 100%;
   height: auto;
